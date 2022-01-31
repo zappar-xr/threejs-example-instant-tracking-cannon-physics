@@ -80,7 +80,7 @@ ZapparSplashScreen.showUI(
       });
     },
     title: 'Universal AR for Three.js',
-    subtitle: 'Image Tracking Cannon Physics',
+    subtitle: 'World Tracking Cannon Physics',
     buttonText: 'Tap here to start',
     background,
     logo,
@@ -117,7 +117,7 @@ const hotspotImage = new THREE.TextureLoader(manager).load(hotspot);
 const floorShape = new CANNON.Plane();
 const floorBody = new CANNON.Body({
   mass: 0,
-  position: new CANNON.Vec3(0, -1.25, 0),
+  position: new CANNON.Vec3(0, 0, 0),
   shape: floorShape,
 });
 // Rotate Floorfloor
@@ -142,7 +142,7 @@ const floor = new THREE.Mesh(
   }),
 );
 floor.receiveShadow = true;
-floor.position.set(0, -1.2, 0);
+floor.position.set(0, 0, 0);
 floor.rotateX(-Math.PI / 2);
 instantWorldAnchorGroup.add(floor);
 
