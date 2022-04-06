@@ -32,7 +32,7 @@
   "dependencies": {
     "@types/cannon": "^0.1.5",
     "@zappar/splash": "0.0.0-rc.1",
-    "@zappar/zappar-threejs": "^0.4.0-beta.6",
+    "@zappar/zappar-threejs": "^2.0.0-beta.8",
     "cannon": "^0.6.2",
     "cannon-es": "^0.18.0",
     "three": "^0.126.1"
