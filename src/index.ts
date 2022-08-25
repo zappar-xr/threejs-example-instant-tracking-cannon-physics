@@ -11,13 +11,16 @@
 import * as THREE from 'three';
 import * as ZapparThree from '@zappar/zappar-threejs';
 import * as CANNON from 'cannon-es';
-import './index.sass';
+import './index.css';
 import * as ZapparSplashScreen from '@zappar/splash';
-import logo from '../assets/zapworksLogo.png';
-import background from '../assets/background.jpg';
-import hotspot from '../assets/hotspot.png';
+
 import RigidBodyMesh from './rigidBodyMesh';
 import world from './world';
+
+const logo = new URL('../assets/zapworksLogo.png', import.meta.url).href;
+const background = new URL('../assets/background.jpg', import.meta.url).href;
+const hotspot = new URL('../assets/hotspot.png', import.meta.url).href;
+
 
 /*
 * *** HTML Elements *** *
